@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HelloWorld';
+//Here Using Interpolation Data Binding
+  ngOnInit(): void{
+    this.title="Hello From Bridgelabz.";
+  }
 }

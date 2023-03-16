@@ -10,8 +10,12 @@ export class AppComponent {
   
   //Here applying property data binding
   imgUrl="../assets/Bridgelabz_Logo.jpg";
+
   //Here applying event binding
   url="https://www.bridgelabz.com";
+
+  //Specify userName as String Type in the App Component Model for forms module
+  userName: string = "";
 
 //Here Using Interpolation Data Binding
   ngOnInit(): void{

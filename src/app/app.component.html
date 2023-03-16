@@ -1,9 +1,14 @@
 <div>
   <!-- Here using interpolation data binding -->
-  <h1>{{this.title}}</h1>
+  <!--Change in the userName reflected in the header tag-->
+  <h1>Hello {{this.userName}} from Bridgelabz</h1>
   <!--Here using property data binding and click is used for event binding-->
   <img [src] = "imgUrl" (click)="onClick($event)"
     alt="The Bridgelabz logo: A Bridge to Employement through a Lab Works."
     />
+</div>
+<div>
+  <!-- Bind the input Form Element using [(ngModel)] to userName -->
+  <input [(ngModel)] = "userName"/> <br/><br/>
 </div>
 <router-outlet></router-outlet>

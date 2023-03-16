@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HelloWorld';
+  
+  //Here applying property data binding
+  imgUrl="../assets/Bridgelabz_Logo.jpg";
+
 //Here Using Interpolation Data Binding
   ngOnInit(): void{
     this.title="Hello From Bridgelabz.";

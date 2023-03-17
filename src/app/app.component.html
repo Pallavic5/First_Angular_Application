@@ -9,6 +9,8 @@
 </div>
 <div>
   <!-- Bind the input Form Element using [(ngModel)] to userName -->
-  <input [(ngModel)] = "userName"/> <br/><br/>
+
+  <input (input) ="onInput($event)" [(ngModel)] = "userName"/>
+  <span class="error-output">{{this.nameError}}</span>
 </div>
 <router-outlet></router-outlet>
